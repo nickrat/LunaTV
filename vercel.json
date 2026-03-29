@@ -1,4 +1,5 @@
 {
+  "version": 3,
   "headers": [
     {
       "source": "/fonts/inter-var-latin.woff2",
@@ -14,6 +15,18 @@
     {
       "path": "/api/cron",
       "schedule": "0 1 * * *"
+    }
+  ],
+  "builds": [
+    {
+      "src": ".vercel/output/static/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
