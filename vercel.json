@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "headers": [
     {
       "source": "/fonts/inter-var-latin.woff2",
@@ -19,7 +19,7 @@
   ],
   "builds": [
     {
-      "src": ".vercel/output/static/**",
+      "src": "out/**",
       "use": "@vercel/static"
     }
   ],
